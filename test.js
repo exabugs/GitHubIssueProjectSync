@@ -4,7 +4,7 @@ const lambda = require("./lambda");
 
 process.env.token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
-// 下記 X-Hub-Signature の値 sha1= は、GitHub の
+// 下記 X-Hub-Signature の値 sha1= は、GitHub Webhooks の Recent Deliveries 参照
 const event = {
   headers: {
     'X-Hub-Signature': 'sha1=127ad3ca94f4e3520fb30fb18b6d36d0b6de28d'
